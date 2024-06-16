@@ -1,0 +1,114 @@
+/* style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styles */
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+  }
+  
+  /* Header */
+  h1 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  
+  /* Choices container */
+  .choices {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .choice {
+    margin: 0 10px;
+  }
+  
+  .choice img {
+    width: 200px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s;
+    border-radius: 50%;
+    
+  }
+  
+  .choice img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Scoreboard */
+  .score-board {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .score {
+    margin: 0 20px;
+    text-align: center;
+  }
+  
+  .score p {
+    font-size: 1.5rem;
+    margin: 5px 0;
+  }
+  
+  /* Message container */
+  .msg-container {
+    text-align: center;
+    width: 180px;
+    height: auto;
+  }
+  
+  #msg {
+    font-size: 1.6rem;
+    margin-top: 10px;
+    background-color: black;
+    color: azure;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .choice img {
+      width: 80px;
+    }
+  
+    .score p {
+      font-size: 1.2rem;
+    }
+  
+    #msg {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .choice img {
+      width: 70px;
+    }
+  
+    .score p {
+      font-size: 1rem;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    #msg {
+      font-size: 0.9rem;
+    }
+  }
+  
